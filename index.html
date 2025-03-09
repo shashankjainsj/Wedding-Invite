@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank & Ayushi - Wedding Invite</title>
+    <link rel="stylesheet" href="styles.css">
+   <style>
+        .event-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            text-align: center;
+        }
+        .event-row {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .event {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #d63384;
+            border-radius: 20px;
+            width: 260px;
+            height: 280px;
+            background: #fff;
+            padding: 25px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .event:hover {
+            transform: scale(1.1);
+        }
+        .event-logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 12px;
+        }
+        .event p strong {
+            font-size: 1.8em;
+            color: #333;
+            font-weight: bold;
+        }
+        .event .event-time {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+        .event-description {
+            font-size: 1em;
+            color: #555;
+            margin-top: 12px;
+        }
+	
+        .venue {
+            font-size: 2.4em;
+            font-weight: bold;
+            color: #d63384;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #location {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px;
+        }
+        #location iframe {
+            width: 60%;
+            height: 180px;
+            border-radius: 10px;
+        }
+        .timeline {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.5em
+        }
+        .timeline img {
+            width: 50%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+		.bride-groom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .bride-groom-images {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .bride-groom-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .bride-groom-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style> 
+    <style>
+        .family-details {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 30px 0;
+            padding: 30px;
+        }
+        .family-details h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #d63384;
+        }
+        .family-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .family-member {
+            text-align: center;
+        }
+        .family-member img {
+            width: 250px;
+            height: 250px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin: 30px 30px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .family-member p {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+	<style>
+        .story {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 30px 0;
+            padding: 30px;
+        }
+        .story h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #d63384;
+        }
+        .story-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .story-member {
+            text-align: center;
+        }
+        .story-member img {
+            width: 250px;
+            height: 250px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin: 30px 30px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .story-member p {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💌Wedding Invitation💌</h1>
+        <p>You're invited to celebrate our love!</p>
+		<!-- <h2><strong>Shashank ❤️ Ayushi</strong></h2> -->
+        <!-- <h2>6th May 2025</h2> -->
+		<div class="bride-groom-container">
+            <div class="bride-groom-images">
+                <div>
+                    <img src="images/groom.jpg" alt="Groom" class="bride-groom-img">
+                    <!--<p class="bride-groom-text">Groom</p-->
+					<h2>Shashank</h2>
+                </div>
+				<h2>💞weds💞</h2>
+                <div>
+                    <img src="images/bride.jpg" alt="Bride" class="bride-groom-img">
+                    <!--<p class="bride-groom-text">Bride</p>-->
+					<h2>Ayushi</h2>
+                </div>
+            </div>
+        </div>
+        <h2>6th May 2025</h2>
+    </header>
+
+    <section class="family-details">
+        <h2>Meet the Families</h2>
+        <div class="family-container">
+            <div class="family-member">
+                <img src="images/shashank_family1.jpg" alt="Shashank's Family">
+                <h2>Shashank</h2>
+                <p>Grand Son of Late Smt. Kamlabai Ji & Late Shree Bhaiyalal Ji Jain</p>  
+                <p2><strong>Son of Smt. Bharti & Surendra Kumar Jain</strong></p2>
+                <p>Ward No.09, Patel Market Gairatganj</p>
+            </div>
+            <div class="family-member">
+                <img src="images/ayushi_family1.jpg" alt="Ayushi's Family">
+                <h2>Ayushi</h2>
+                <p>Grand Daughter of Smt. Anitabai Ji & Late Shree Babulal Ji Jain</p>
+                <p2><strong>Daughter of Smt. Bindu & Sunil Jain</strong></p2>
+                <p>Shankrachary Nagar, Bhopal</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="story">
+		<div class="story-container">
+			<div class="story-member">
+				<p><h2>Our Story</h2></p>
+				<img src="images/pic2.jpg" alt="Couple Image">
+				<img src="images/roka.jpg" alt="Couple Image">
+				<img src="images/pic1.jpg" alt="Couple Image">
+				<p>It all started with a smile, and here we are, ready to start forever together!</p>
+			</div>
+		</div>
+    </section>
+
+    <section id="event-details">
+        <h2 style="font-size: 2.5em;"><strong>Wedding Event Details</strong></h2>
+        <div class="event-container">
+            <div class="event-row">
+                <div class="event">
+                    <img src="images/mehandi1.png" class="event-logo" alt="Mehandi Ceremony">
+                    <p><strong>🌼 Mehandi</strong></p>
+                    <p class="event-time">4th May, 1 PM</p>
+                    <p class="event-description">An evening of henna, music, and joyful celebrations as we paint love in vibrant hues🌿💚</p>
+                </div>
+                <div class="event">
+                    <img src="images/haldi.png" class="event-logo" alt="Haldi Ceremony">
+                    <p><strong>🌼 Haldi</strong></p>
+                    <p class="event-time">5th May, 10 AM</p>
+                    <p class="event-description">A morning of turmeric, laughter, and love! Wear yellow and join the fun. ✨</p>
+                </div>
+                <div class="event">
+                    <img src="images/sangeet.jpg" class="event-logo" alt="Sangeet Night">
+                    <p><strong>🎶 Sangeet</strong></p>
+                    <p class="event-time">5th May, 7 PM</p>
+                    <p class="event-description">An evening filled with dance, music, and celebrations! 💃🕺</p>
+                </div>
+            </div>
+            <div class="event-row">
+                <div class="event">
+                    <img src="images/ring.png" class="event-logo" alt="Ring Ceremony">
+                    <p><strong>💍Ring Ceremony</strong></p>
+                    <p class="event-time">6th May, 6 PM</p>
+                    <p class="event-description">A special moment as we exchange rings and promise forever! 💕</p>
+                </div>
+                <div class="event">
+                    <img src="images/phere.png" class="event-logo" alt="Phere">
+                    <p><strong>🔥Phere</strong></p>
+                    <p class="event-time">6th May, 7:30 PM</p>
+                    <p class="event-description">Sacred vows around the holy fire, binding us together for life. 🙏</p>
+                </div>
+            </div>
+            <div class="event-row">
+                <div class="event">
+                    <img src="images/wedding.webp" class="event-logo" alt="Wedding">
+                    <p><strong>👫Wedding & Reception</strong></p>
+                    <p class="event-time">6th May, 9 PM</p>
+                    <p class="event-description">A grand celebration of our love with family and friends! 🎉</p>
+                </div>
+            </div>
+        </div>
+        <p class="venue">📍 Venue: Matra Shree Garden, Gairatganj</p>
+    </section>
+
+    <section class="timeline">
+        <h2>Wedding Timeline</h2>
+        <img src="images/weddingtimeline.png" alt="Wedding Timeline">
+    </section>
+
+    <section id="location">
+        <h2>📍 Location</h2>
+        <p>Join us at <strong>Shubh Gold Palace, Gairatganj</strong>.</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.421414972958!2d78.21959197532551!3d23.409139478904716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ebf8f03ed0d01%3A0xa7892642a30787e8!2sShubh%20Gold%20Palace!5e0!3m2!1sen!2sin!4v1741509042957!5m2!1sen!2sin" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="rsvp">
+        <h2>💌RSVP💌</h2>
+        <p><strong>===============O================</strong></p>
+        <p2><strong>Shubh Gold Palace</strong></p2>
+        <p><strong>Surendra Kumar Jain<strong></p>
+        <p><strong>Shubham Jain<strong></p>
+        <p>9424402335,9406952904</p>
+    </section>
+
+    <footer>
+        <p>Thank you for being part of our special day! ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
