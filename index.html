@@ -185,6 +185,38 @@
             font-weight: bold;
             color: #333;
         }
+        .download-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .download-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background: #d63384;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 250px;
+            margin: 10px auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-button:hover {
+            background: #a12468;
+            transform: scale(1.05);
+        }
+
+        .download-icon {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body>
@@ -256,13 +288,13 @@
                 <div class="event">
                     <img src="images/haldi.png" class="event-logo" alt="Haldi Ceremony">
                     <p><strong>🌼 Haldi</strong></p>
-                    <p class="event-time">5th May, 10 AM</p>
+                    <p class="event-time">5th May, 3 PM</p>
                     <p class="event-description">A morning of turmeric, laughter, and love! Wear yellow and join the fun. ✨</p>
                 </div>
                 <div class="event">
                     <img src="images/sangeet.jpg" class="event-logo" alt="Sangeet Night">
                     <p><strong>🎶 Sangeet</strong></p>
-                    <p class="event-time">5th May, 7 PM</p>
+                    <p class="event-time">5th May, 8 PM</p>
                     <p class="event-description">An evening filled with dance, music, and celebrations! 💃🕺</p>
                 </div>
             </div>
@@ -270,13 +302,13 @@
                 <div class="event">
                     <img src="images/ring.png" class="event-logo" alt="Ring Ceremony">
                     <p><strong>💍Ring Ceremony</strong></p>
-                    <p class="event-time">6th May, 6 PM</p>
+                    <p class="event-time">6th May, 11 AM</p>
                     <p class="event-description">A special moment as we exchange rings and promise forever! 💕</p>
                 </div>
                 <div class="event">
                     <img src="images/phere.png" class="event-logo" alt="Phere">
                     <p><strong>🔥Phere</strong></p>
-                    <p class="event-time">6th May, 7:30 PM</p>
+                    <p class="event-time">6th May, 3 PM</p>
                     <p class="event-description">Sacred vows around the holy fire, binding us together for life. 🙏</p>
                 </div>
             </div>
@@ -284,7 +316,7 @@
                 <div class="event">
                     <img src="images/wedding.webp" class="event-logo" alt="Wedding">
                     <p><strong>👫Wedding & Reception</strong></p>
-                    <p class="event-time">6th May, 9 PM</p>
+                    <p class="event-time">6th May, 6 PM</p>
                     <p class="event-description">A grand celebration of our love with family and friends! 🎉</p>
                 </div>
             </div>
@@ -305,15 +337,16 @@
     <section class="invite-download">
         <div class="video-container">
             <h3>Watch Invitation Video</h3>
-            <video controls width="400">
+            <video controls width="500">
                 <source src="images/ShaAyuCompressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <p>Click below to download the wedding invite PDF or video.</p>
-        <a href="images/ShaAyu_compressed.pdf" download class="download-button">Download Invite PDF</a>
+        <a href="images/ShaAyu.mp4" download class="download-button">🎥 Download Invite Video</a>
         <br>
-        <a href="images/ShaAyu.mp4" download class="download-button">Download Invite Video</a>
+        <br>
+        <a href="images/ShaAyu_compressed.pdf" download class="download-button">📥 Download Invite PDF</a>
     </section>
 
     <section id="location">
@@ -331,11 +364,17 @@
         <p2><strong>Shubh Gold Palace</strong></p2>
         <p><strong>Surendra Kumar Jain<strong></p>
         <p><strong>Shubham Jain<strong></p>
-        <p>9424402335,9406952904</p>
+        <p>☎ 9424402335, 9406952904</p>
     </section>
 
     <footer>
-        <p>Thank you for being part of our special day! ❤️</p>
+        <!-- <p>A day of love and joy awaits – and it wouldn’t be the same without you! 💕</p> -->
+        <p class="blinking-text"><strong>A day of love and joy awaits – and it wouldn’t be the same without you! 💕</strong></p>
+        <p>Follow us on: 
+            <a href="https://instagram.com/shashank.jain_sj" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
