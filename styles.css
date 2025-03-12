@@ -62,24 +62,26 @@ button:hover {
     color: #ff0080;
     animation: blink 5s infinite;
 }
-/* Mobile Styles */
+/* Mobile Styles (For screens smaller than 768px) */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; /* Adjust font size for readability */
+        font-size: 16px; /* Adjust font size for better readability */
+        padding: 10px;
     }
 
     .bride-groom-images {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column; /* Stack bride & groom images */
         align-items: center;
+        gap: 10px;
     }
 
     .bride-groom-img {
-        width: 180px; /* Reduce image size for mobile */
+        width: 180px; /* Make images smaller for mobile */
         height: 180px;
     }
 
     .event-container {
-        flex-direction: column; /* Stack event cards */
+        flex-direction: column; /* Stack event cards vertically */
         gap: 30px;
     }
 
@@ -91,10 +93,11 @@ button:hover {
 
     .family-container {
         flex-direction: column; /* Stack family images */
+        gap: 20px;
     }
 
     .family-member img {
-        width: 200px; /* Reduce family images */
+        width: 200px; /* Adjust image size */
         height: 200px;
     }
 
@@ -104,7 +107,7 @@ button:hover {
     }
 
     .story-member img {
-        width: 90%; /* Make story images smaller */
+        width: 90%; /* Make story images fit screen */
     }
 
     #location iframe {
@@ -112,11 +115,11 @@ button:hover {
         height: 200px;
     }
 
-    footer p {
-        font-size: 14px; /* Smaller text in footer */
-    }
-
     .download-button {
         width: 90%; /* Make download buttons bigger for touch */
+    }
+
+    footer p {
+        font-size: 14px; /* Smaller text in footer */
     }
 }
