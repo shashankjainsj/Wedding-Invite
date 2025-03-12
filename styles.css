@@ -123,3 +123,28 @@ button:hover {
         font-size: 14px; /* Smaller text in footer */
     }
 }
+/* Fix Event Section on Mobile */
+@media screen and (max-width: 768px) {
+    .event-container {
+        display: flex;
+        flex-direction: column; /* Stack events vertically */
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ensure it takes full width */
+        overflow: hidden; /* Prevents overflow issues */
+    }
+
+    .event-row {
+        flex-direction: column; /* Stack events instead of horizontal alignment */
+        align-items: center;
+        width: 100%;
+    }
+
+    .event {
+        width: 90%; /* Make sure event boxes fit within the screen */
+        max-width: 320px; /* Prevents being too wide */
+        text-align: center;
+        padding: 15px;
+    }
+}
+
