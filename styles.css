@@ -62,3 +62,61 @@ button:hover {
     color: #ff0080;
     animation: blink 5s infinite;
 }
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    .bride-groom-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
+    .bride-groom-img {
+        width: 180px; /* Reduce image size for mobile */
+        height: 180px;
+    }
+
+    .event-container {
+        flex-direction: column; /* Stack event cards */
+        gap: 30px;
+    }
+
+    .event {
+        width: 90%; /* Make event cards full width */
+        height: auto;
+        padding: 15px;
+    }
+
+    .family-container {
+        flex-direction: column; /* Stack family images */
+    }
+
+    .family-member img {
+        width: 200px; /* Reduce family images */
+        height: 200px;
+    }
+
+    .story-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-member img {
+        width: 90%; /* Make story images smaller */
+    }
+
+    #location iframe {
+        width: 100%; /* Full width for maps */
+        height: 200px;
+    }
+
+    footer p {
+        font-size: 14px; /* Smaller text in footer */
+    }
+
+    .download-button {
+        width: 90%; /* Make download buttons bigger for touch */
+    }
+}
